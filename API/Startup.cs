@@ -33,7 +33,7 @@ namespace API
             });
             // Register the Swagger generator, defining 1 or more Swagger documents
             services.AddSwaggerGen();
-            
+            services.AddCors();
             services.AddControllers();
         }
 
@@ -58,6 +58,7 @@ namespace API
 
             app.UseRouting();
 
+            app.UseCors(x => x.WithOrigins("https://localhost:4200").AllowAnyHeader().AllowAnyMethod());
             app.UseAuthorization();
 
             app.UseEndpoints(endpoints =>
