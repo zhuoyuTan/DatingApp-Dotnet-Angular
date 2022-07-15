@@ -23,12 +23,9 @@ import { ServerErrorComponent } from './errors/server-error/server-error.compone
 import { MemberCardComponent } from './members/member-card/member-card.component';
 import { JwtInterceptor } from './interceptors/jwt.interceptor';
 import { NgxGalleryModule } from '@kolkov/ngx-gallery';
-<<<<<<< HEAD
 import { MemberEditComponent } from './members/member-edit/member-edit.component';
 import { NgxSpinnerModule } from 'ngx-spinner';
 import { LoadingInterceptor } from './interceptors/loading.interceptor';
-=======
->>>>>>> c69f7b656b78567f52dfb952d47101fb2b91fffb
 
 @NgModule({
   declarations: [
@@ -44,10 +41,7 @@ import { LoadingInterceptor } from './interceptors/loading.interceptor';
     NotFoundComponent,
     ServerErrorComponent,
     MemberCardComponent,
-<<<<<<< HEAD
     MemberEditComponent,
-=======
->>>>>>> c69f7b656b78567f52dfb952d47101fb2b91fffb
     
 
     
@@ -59,20 +53,13 @@ import { LoadingInterceptor } from './interceptors/loading.interceptor';
     BrowserAnimationsModule,
     FormsModule,
     SharedModule,
-<<<<<<< HEAD
     NgxGalleryModule,
     NgxSpinnerModule
-=======
-    NgxGalleryModule
->>>>>>> c69f7b656b78567f52dfb952d47101fb2b91fffb
   ],
   providers: [
     {provide: HTTP_INTERCEPTORS, useClass: ErrorInterceptor, multi: true},
     {provide: HTTP_INTERCEPTORS, useClass: JwtInterceptor, multi: true},
-<<<<<<< HEAD
     {provide: HTTP_INTERCEPTORS, useClass: LoadingInterceptor, multi: true}
-=======
->>>>>>> c69f7b656b78567f52dfb952d47101fb2b91fffb
   ],
   bootstrap: [AppComponent]
 })
